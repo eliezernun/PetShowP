@@ -1,5 +1,5 @@
 
-import UI.Menu;
+import UI.Login_UI;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -14,7 +14,8 @@ public class Main {
             URLConnection connection = url.openConnection();
             connection.connect();
             System.out.println("Internet is connected");
-            menu();
+
+            Login();
         } catch (MalformedURLException e) {
             JOptionPane.showMessageDialog(null, "Ocorreu um erro ao abrir a conexão de teste! \nO Sistema sera fechado!");
             System.exit(0);
@@ -23,17 +24,20 @@ public class Main {
                     "\n Para o correto funcionamento do sistema, verifique sua conexão com a internet!");
         }
     }
-    public  static  void menu(){
-        Menu MenuP = new Menu();
-        JPanel Menu_ui = MenuP.getMenuPrincipal();
+
+    public  static void Login(){
+
         JFrame Janela = new JFrame();
+        Login_UI Login = new Login_UI(Janela);
+        JPanel Login_ui = Login.getLogin_form();
         Janela.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        Janela.setContentPane(Menu_ui);
+        Janela.setContentPane(Login_ui);
         Janela.pack();
-        Janela.setSize(800,600);
+        Janela.setSize(300,300);
         Janela.setLocationRelativeTo(null);
         Janela.setVisible(true);
         Janela.setTitle("PetShowP ->");
+
     }
 }
 

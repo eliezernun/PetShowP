@@ -11,7 +11,7 @@ public class PessoaDAO {
     Connection conn;
     PreparedStatement pstm;
     public void cadastrarPessoa(PessoaDTO objPessoa){
-        String sql = "insert into Pessoa(Nome, Telefone, logradouro, CPF, funcionario) values(?,?,?,?,?)";
+        String sql = "insert into Pessoa(Nome, Telefone, logradouro, CPF, funcionario, ddd_telefone, whatsapp, numero, bairro, cep) values(?,?,?,?,?,?,?,?,?,?)";
         conn = new DBC().conectarDB();
         try {
             pstm = conn.prepareStatement(sql);

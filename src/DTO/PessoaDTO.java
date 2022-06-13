@@ -1,8 +1,65 @@
 package DTO;
 
 public class PessoaDTO {
-    private String nome_pessoa, telefone_pessoa, logradouro_pessoa, cpf_pessoa;
-    private boolean pessoa_funcionario = false;
+    private String nome_pessoa, telefone_pessoa, logradouro_pessoa, cpf_pessoa, ddd_pessoa, whatsapp_pessoa, pessoa_bairro;
+    private String pessoa_endereco_numero, pessoa_endereco_bairro, pessoa_endereco_cep;
+    private boolean pessoa_funcionario, pessoa_inativa;
+
+    public String getDdd_pessoa() {
+        return ddd_pessoa;
+    }
+
+    public void setDdd_pessoa(String ddd_pessoa) {
+        this.ddd_pessoa = ddd_pessoa;
+    }
+
+    public String getWhatsapp_pessoa() {
+        return whatsapp_pessoa;
+    }
+
+    public void setWhatsapp_pessoa(String whatsapp_pessoa) {
+        this.whatsapp_pessoa = whatsapp_pessoa;
+    }
+
+    public String getPessoa_bairro() {
+        return pessoa_bairro;
+    }
+
+    public void setPessoa_bairro(String pessoa_bairro) {
+        this.pessoa_bairro = pessoa_bairro;
+    }
+
+    public String getPessoa_endereco_numero() {
+        return pessoa_endereco_numero;
+    }
+
+    public void setPessoa_endereco_numero(String pessoa_endereco_numero) {
+        this.pessoa_endereco_numero = pessoa_endereco_numero;
+    }
+
+    public String getPessoa_endereco_bairro() {
+        return pessoa_endereco_bairro;
+    }
+
+    public void setPessoa_endereco_bairro(String pessoa_endereco_bairro) {
+        this.pessoa_endereco_bairro = pessoa_endereco_bairro;
+    }
+
+    public String getPessoa_endereco_cep() {
+        return pessoa_endereco_cep;
+    }
+
+    public void setPessoa_endereco_cep(String pessoa_endereco_cep) {
+        this.pessoa_endereco_cep = pessoa_endereco_cep;
+    }
+
+    public boolean isPessoa_inativa() {
+        return pessoa_inativa;
+    }
+
+    public void setPessoa_inativa(boolean pessoa_inativa) {
+        this.pessoa_inativa = pessoa_inativa;
+    }
 
     public String getNome_pessoa() {
         return nome_pessoa;

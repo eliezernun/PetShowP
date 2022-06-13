@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fc48a20-5c88-4c71-a366-b004bbf0e0c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DAO/PessoaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/PetDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAO/ProfissionalDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTO/PetDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTO/ProfissionalDTO.java" afterDir="false" />
+    <list default="true" id="4fc48a20-5c88-4c71-a366-b004bbf0e0c2" name="Changes" comment="OK">
+      <change afterPath="$PROJECT_DIR$/src/DAO/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DTO/TrocaSenhaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DTO/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Login_UI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Login_UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Troca_Senha_UI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Troca_Senha_UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UTIL/PW_Encrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/DBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/DBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/PessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/PessoaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DTO/PessoaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PessoaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Menu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Menu.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Pessoa.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Pessoa.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/ServicosScreen.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/ServicosScreen.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +50,9 @@
     &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;277&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;430&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/eliez/IdeaProjects/PetShowP/mysql-connector-java-8.0.21.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -61,6 +73,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654759560319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="OK">
+      <created>1654808467566</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654808467566</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +117,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Incluir outras informações no cadastro do cliente." />
     <MESSAGE value="OK" />
     <option name="LAST_COMMIT_MESSAGE" value="OK" />
   </component>
