@@ -15,7 +15,7 @@ public class UserDAO {
     PreparedStatement pstm;
 
     public UserDTO getUserPropsFromDB(String user, String pw){
-        String sql = "SELECT * FROM Usuarios_Sistema WHERE usuario LIKE ?";
+        String sql = "SELECT * FROM Usuarios_Sistema WHERE usuario = ?";
         conn = new DBC().conectarDB();
         UserDTO userObject = new UserDTO();
         try{
@@ -40,10 +40,12 @@ public class UserDAO {
                     userObject.setModulo_relatorios(rs.getInt("modulo_relatorios"));
                     userObject.setInativo(inativo);
                     userObject.setTrocarSenha(rs.getBoolean("trocarSenha"));
+                    userObject.setAutenticado(true);
                 }
                 else{
                     System.out.println("NOK");
-                    return null;
+                    userObject.setAutenticado(false);
+                    return userObject;
                 }
             }
             pstm.close();

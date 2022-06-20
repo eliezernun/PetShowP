@@ -2,24 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fc48a20-5c88-4c71-a366-b004bbf0e0c2" name="Changes" comment="OK">
-      <change afterPath="$PROJECT_DIR$/src/DAO/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTO/TrocaSenhaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTO/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Login_UI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Login_UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Troca_Senha_UI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Troca_Senha_UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UTIL/PW_Encrypt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DAO/FuncaoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DTO/FuncaoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Funcoens_UI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Funcoens_UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UTIL/ComboItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UTIL/TableModelPet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAO/PessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/PessoaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/PetDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/PetDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/ProfissionalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/ProfissionalDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DTO/PessoaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PessoaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DTO/PetDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PetDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DTO/ProfissionalDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/ProfissionalDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Login_UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Menu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Menu.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Pessoa.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Pessoa.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/ServicosScreen.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/ServicosScreen.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,10 +59,11 @@
     &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;277&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;430&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/eliez/IdeaProjects/PetShowP/mysql-connector-java-8.0.21.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-functions-6.19.1.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -73,11 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -102,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654808467566</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="OK">
+      <created>1655152761519</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655152761519</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

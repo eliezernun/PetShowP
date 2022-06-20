@@ -41,7 +41,7 @@ public class Login_UI {
                 UserDAO userLogin = new UserDAO();
                 UserDTO userObject = userLogin.getUserPropsFromDB(usuario, SenhaC);
 
-                if((userObject != null)){
+                if((userObject.isAutenticado() == true)){
                     menu(userObject);
                     Janela.dispose();
                 }
@@ -59,7 +59,7 @@ public class Login_UI {
         Janela.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         Janela.setContentPane(Menu_ui);
         Janela.pack();
-        Janela.setSize(800,600);
+        Janela.setSize(820,600);
         Janela.setLocationRelativeTo(null);
         Janela.setVisible(true);
         Janela.setTitle("PetShowP ->");

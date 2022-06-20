@@ -4,7 +4,15 @@ public class UserDTO {
     String usuario, senha;
     int modulo_pessoa, modulo_agenda, modulo_caixa, modulo_cfg, modulo_pessoa_funionario;
     int modulo_pessoa_alterar_usuario, modulo_pessoa_admin, profissional_id, modulo_relatorios;
-    boolean inativo, trocarSenha;
+    boolean inativo, trocarSenha, autenticado;
+
+    public boolean isAutenticado() {
+        return autenticado;
+    }
+
+    public void setAutenticado(boolean autenticado) {
+        this.autenticado = autenticado;
+    }
 
     public boolean isTrocarSenha() {
         return trocarSenha;

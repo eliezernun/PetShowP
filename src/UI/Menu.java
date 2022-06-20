@@ -12,6 +12,7 @@ public class Menu {
     private JButton CaixaButton;
     private JButton configButton;
     private JPanel MenuPrincipal;
+    private JButton funçõesButton;
 
     public JPanel getMenuPrincipal(){
         return MenuPrincipal;
@@ -85,5 +86,20 @@ public class Menu {
         });
 
 
+        funçõesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+               Funcoens_UI FuncoensUI = new Funcoens_UI();
+               JPanel funcoensScreenUI = FuncoensUI.getFuncoes_panel();
+                JFrame Janela = new JFrame();
+                Janela.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                Janela.setContentPane(funcoensScreenUI);
+                Janela.pack();
+                Janela.setSize(500,350);
+                Janela.setLocationRelativeTo(null);
+                Janela.setVisible(true);
+                Janela.setTitle("Funções");
+            }
+        });
     }
 }

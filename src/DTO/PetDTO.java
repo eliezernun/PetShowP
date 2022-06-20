@@ -3,7 +3,7 @@ package DTO;
 public class PetDTO {
     String nome_pet, aniversario_pet, comentario_pet, tamanho_pet;
     boolean inativo_pet;
-    int id;
+    int id = 0;
 
     public int getID(){
         return this.id;

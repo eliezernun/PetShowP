@@ -1,9 +1,26 @@
 package DTO;
 
 public class PessoaDTO {
-    private String nome_pessoa, telefone_pessoa, logradouro_pessoa, cpf_pessoa, ddd_pessoa, whatsapp_pessoa, pessoa_bairro;
+    private String nome_pessoa, telefone_pessoa, logradouro_pessoa, cpf_pessoa, ddd_pessoa,  pessoa_bairro;
     private String pessoa_endereco_numero, pessoa_endereco_bairro, pessoa_endereco_cep;
-    private boolean pessoa_funcionario, pessoa_inativa;
+    private boolean pessoa_funcionario, pessoa_inativa, whatsapp_pessoa;
+    int id = 0;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isWhatsapp_pessoa() {
+        return whatsapp_pessoa;
+    }
+
+    public void setWhatsapp_pessoa(boolean whatsapp_pessoa) {
+        this.whatsapp_pessoa = whatsapp_pessoa;
+    }
 
     public String getDdd_pessoa() {
         return ddd_pessoa;
@@ -13,13 +30,6 @@ public class PessoaDTO {
         this.ddd_pessoa = ddd_pessoa;
     }
 
-    public String getWhatsapp_pessoa() {
-        return whatsapp_pessoa;
-    }
-
-    public void setWhatsapp_pessoa(String whatsapp_pessoa) {
-        this.whatsapp_pessoa = whatsapp_pessoa;
-    }
 
     public String getPessoa_bairro() {
         return pessoa_bairro;
@@ -99,5 +109,20 @@ public class PessoaDTO {
 
     public void setPessoa_funcionario(boolean pessoa_funcionario) {
         this.pessoa_funcionario = pessoa_funcionario;
+    }
+    public void setPessoaLimpar(){
+                this.id = 0;
+                this.nome_pessoa = "";
+                this.telefone_pessoa = "";
+                this.logradouro_pessoa = "";
+                this.cpf_pessoa = "";
+                this.ddd_pessoa = "";
+                this. pessoa_bairro = "";
+                this. pessoa_endereco_numero = "";
+                this.pessoa_endereco_bairro = "";
+                this.pessoa_endereco_cep = "";
+                this.pessoa_funcionario = false;
+                this.pessoa_inativa = false;
+                this.whatsapp_pessoa = false;
     }
 }
