@@ -26,7 +26,6 @@ public class UserDAO {
                 String pwa = rs.getString("senha");
                 boolean inativo = rs.getBoolean("inativo");
                 if(pwa.equals(pw) && !inativo){
-                    System.out.println("OK");
                     userObject.setProfissional_id(rs.getInt("profissional_id"));
                     userObject.setUsuario(rs.getString("usuario"));
                     userObject.setSenha(rs.getString("senha"));
@@ -41,11 +40,10 @@ public class UserDAO {
                     userObject.setInativo(inativo);
                     userObject.setTrocarSenha(rs.getBoolean("trocarSenha"));
                     userObject.setAutenticado(true);
+
                 }
                 else{
-                    System.out.println("NOK");
                     userObject.setAutenticado(false);
-                    return userObject;
                 }
             }
             pstm.close();
@@ -53,7 +51,69 @@ public class UserDAO {
         catch(SQLException error){
             JOptionPane.showMessageDialog(null, error);
         }
-        return userObject;
+        finally {
+            return userObject;
+        }
     }
+    public void setUser(UserDTO userObject){
+        String sql = "insert into Usuario_Sistema(profissional_id, usuario, senha, modulo_pessoa, modulo_agenda, " +
+                "modulo_caixa, modulo_config, modulo_pessoa_funcionario, modulo_pessoa_alterar_usuario, " +
+                "modulo_pessoa_admin, modulo_relatorios, trocarSenha, inativo) values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        conn = new DBC().conectarDB();
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setInt(1, userObject.getProfissional_id());
+            pstm.setString(2, userObject.getUsuario());
+            pstm.setString(3, "YWJjMTIz");
+            pstm.setInt(4, userObject.getModulo_pessoa());
+            pstm.setInt(5, userObject.getModulo_agenda());
+            pstm.setInt(6, 0);
+            pstm.setInt(7, userObject.getModulo_pessoa_funionario());
+            pstm.setInt(8, userObject.getModulo_pessoa_alterar_usuario());
+            pstm.setInt(9, userObject.getModulo_pessoa_admin());
+            pstm.setInt(10, 0);
+            pstm.setInt(11,0);
+            pstm.setBoolean(12, userObject.isInativo());
+            pstm.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
+    }
+    public void updateUser(UserDTO userObject){
+        String sql= "UPDATE Usuarios_Sistemas inativo=?, usuario=?, senha=?, modulo_pessoa=?, modulo_agenda=?," +
+                "modulo_caixa=?, modulo_config=?, modulo_pessoa_funcionario=?, modulo_pessoa_alterar_usuario=?," +
+                "modulo_pessoa_admin=?, modulo_relatorios=?, trocarSenha=?, WHERE Profissional_id=?";
+        conn = new DBC().conectarDB();
+        try {
+            pstm = conn.prepareStatement(sql);
+            pstm.setBoolean(1, userObject.isInativo());
+            pstm.setString(2, userObject.getUsuario());
+            pstm.setString(3, userObject.getSenha());
+            pstm.setInt(4, userObject.getModulo_pessoa());
+            pstm.setInt(5, userObject.getModulo_agenda());
+            pstm.setInt(6, 0);
+            pstm.setInt(7, userObject.getModulo_pessoa_funionario());
+            pstm.setInt(8, userObject.getModulo_pessoa_alterar_usuario());
+            pstm.setInt(9, userObject.getModulo_pessoa_admin());
+            pstm.setInt(10, 0);
+            pstm.setInt(11,0);
+            pstm.setInt(12, userObject.getProfissional_id());
+            pstm.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public void updateSenha(String usuario, String senha){
+        String sql = "UPDATE Usuarios_Sistema SET senha=? Where usuario = ?";
+        conn = new DBC().conectarDB();
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, senha);
+            pstm.setString(2, usuario);
+            pstm.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

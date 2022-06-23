@@ -1,9 +1,35 @@
 package DTO;
 
 public class PetDTO {
-    String nome_pet, aniversario_pet, comentario_pet, tamanho_pet;
+    String nome_pet, aniversario_pet, comentario_pet;
     boolean inativo_pet;
     int id = 0;
+    int id_dono = 0;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId_dono() {
+        return id_dono;
+    }
+
+    public void setId_dono(int id_dono) {
+        this.id_dono = id_dono;
+    }
+
+    public void limpar(){
+        this.nome_pet ="";
+        this.aniversario_pet ="";
+        this.comentario_pet = "";
+        this.inativo_pet = false;
+        this.id = 0;
+        this.id_dono = 0;
+    }
 
     public int getID(){
         return this.id;
@@ -35,14 +61,6 @@ public class PetDTO {
 
     public void setComentario_pet(String comentario_pet) {
         this.comentario_pet = comentario_pet;
-    }
-
-    public String getTamanho_pet() {
-        return tamanho_pet;
-    }
-
-    public void setTamanho_pet(String tamanho_pet) {
-        this.tamanho_pet = tamanho_pet;
     }
 
     public boolean isInativo_pet() {

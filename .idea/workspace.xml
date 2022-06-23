@@ -2,27 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fc48a20-5c88-4c71-a366-b004bbf0e0c2" name="Changes" comment="OK">
-      <change afterPath="$PROJECT_DIR$/src/DAO/FuncaoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTO/FuncaoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Funcoens_UI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Funcoens_UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UTIL/ComboItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UTIL/TableModelPet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/TrocaSenhaUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/TrocaSenhaUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UTIL/isNumberValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetShowP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PetShowP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/FuncaoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/FuncaoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAO/PessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/PessoaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAO/PetDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/PetDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAO/ProfissionalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/ProfissionalDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DTO/PessoaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PessoaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/DBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/DBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DTO/PetDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PetDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DTO/ProfissionalDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/ProfissionalDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Login_UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Config.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Config.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Menu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Menu.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Pessoa.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Pessoa.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UTIL/TableModelPet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +63,8 @@
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;277&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;430&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-functions-6.19.1.jar&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;426&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eliez/IdeaProjects/PetShowP/PetShowP.userlibraries&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,

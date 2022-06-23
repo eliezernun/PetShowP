@@ -38,6 +38,7 @@
           <icon value="img/agenda.png"/>
           <text value="Agenda"/>
           <verticalTextPosition value="3"/>
+          <visible value="false"/>
         </properties>
       </component>
       <component id="4f7a3" class="javax.swing.JButton" binding="CaixaButton">
@@ -51,6 +52,7 @@
           <icon value="img/caixa.png"/>
           <text value="Caixa"/>
           <verticalTextPosition value="3"/>
+          <visible value="false"/>
         </properties>
       </component>
       <hspacer id="15900">

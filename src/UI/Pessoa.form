@@ -127,7 +127,7 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <text value="Cadastrar/Salvar"/>
+                  <text value="Salvar"/>
                 </properties>
               </component>
               <vspacer id="83e1a">
@@ -236,14 +236,6 @@
                   <text value="Inativo?"/>
                 </properties>
               </component>
-              <component id="70c7" class="javax.swing.JCheckBox" binding="Funcionario_Pessoa">
-                <constraints>
-                  <grid row="0" column="8" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Funcionario?"/>
-                </properties>
-              </component>
               <component id="18355" class="javax.swing.JTextField" binding="CEP_Pessoa_text">
                 <constraints>
                   <grid row="4" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="1" use-parent-layout="false">
@@ -270,6 +262,14 @@
                 </constraints>
                 <properties>
                   <text value=""/>
+                </properties>
+              </component>
+              <component id="70c7" class="javax.swing.JCheckBox" binding="Funcionario_Pessoa">
+                <constraints>
+                  <grid row="0" column="8" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Funcionario?"/>
                 </properties>
               </component>
             </children>
@@ -312,14 +312,6 @@
                 </constraints>
                 <properties>
                   <text value="Aniversario"/>
-                </properties>
-              </component>
-              <component id="d7701" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Tamanho:"/>
                 </properties>
               </component>
               <grid id="25799" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -388,20 +380,6 @@
                   <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <component id="932c3" class="javax.swing.JComboBox" binding="PET_Tamanho">
-                <constraints>
-                  <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <editable value="false"/>
-                  <model>
-                    <item value="P"/>
-                    <item value="M"/>
-                    <item value="G"/>
-                    <item value="EG"/>
-                  </model>
-                </properties>
-              </component>
               <component id="c8dca" class="javax.swing.JLabel">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -409,7 +387,7 @@
                 <properties>
                   <background color="-5239777"/>
                   <foreground color="-4514273"/>
-                  <text value="Formato:(DD/MM/AAAA)"/>
+                  <text value="Formato:(AAAA/MM/DD)"/>
                 </properties>
               </component>
               <component id="9e863" class="javax.swing.JButton" binding="Pet_novo_button">
@@ -480,43 +458,15 @@
                   <grid row="4" column="0" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
-              <grid id="7549b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                <margin top="0" left="0" bottom="0" right="0"/>
-                <constraints>
-                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties/>
-                <border type="none" title="Escolaridade:"/>
-                <children>
-                  <component id="c2425" class="javax.swing.JComboBox" binding="Funcionario_graduacao">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <editable value="false"/>
-                      <enabled value="false"/>
-                      <model>
-                        <item value="Fundamental"/>
-                        <item value="Médio"/>
-                        <item value="Superior"/>
-                        <item value="Pós Graduado"/>
-                        <item value="Mestrado"/>
-                        <item value="Doutorado"/>
-                        <item value="Pós Doutorado"/>
-                      </model>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
               <grid id="3b783" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties/>
-                <border type="none" title="Número Certidão Nasci/Casamento:"/>
+                <border type="none" title="Nº Certidão Nasci/Casamento:"/>
                 <children>
-                  <component id="aa976" class="javax.swing.JTextField" binding="Funcionario_Numero_Certidao">
+                  <component id="eb0a7" class="javax.swing.JFormattedTextField" binding="Funcionario_Numero_Certidao">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
@@ -536,15 +486,13 @@
                 </properties>
                 <border type="none" title="Nº CTPS:"/>
                 <children>
-                  <component id="93e80" class="javax.swing.JTextField" binding="Funcionario_Numero_CTPS">
+                  <component id="cbdab" class="javax.swing.JFormattedTextField" binding="Funcionario_Numero_CTPS">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
                       </grid>
                     </constraints>
-                    <properties>
-                      <enabled value="true"/>
-                    </properties>
+                    <properties/>
                   </component>
                 </children>
               </grid>
@@ -556,7 +504,7 @@
                 <properties/>
                 <border type="none" title="Nº RG"/>
                 <children>
-                  <component id="43954" class="javax.swing.JTextField" binding="Funcionario_RG">
+                  <component id="2c992" class="javax.swing.JFormattedTextField" binding="Funcionario_RG">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
@@ -574,33 +522,13 @@
                 <properties/>
                 <border type="none" title="Nº Reservista militar:"/>
                 <children>
-                  <component id="9f723" class="javax.swing.JTextField" binding="Funcionario_reservista">
+                  <component id="f14c" class="javax.swing.JFormattedTextField" binding="Funcionario_reservista">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
                       </grid>
                     </constraints>
                     <properties/>
-                  </component>
-                </children>
-              </grid>
-              <grid id="d0860" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                <margin top="0" left="0" bottom="0" right="0"/>
-                <constraints>
-                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties/>
-                <border type="none" title="PIS:"/>
-                <children>
-                  <component id="78594" class="javax.swing.JTextField" binding="Funcionario_PIS">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                        <preferred-size width="150" height="-1"/>
-                      </grid>
-                    </constraints>
-                    <properties>
-                      <text value=""/>
-                    </properties>
                   </component>
                 </children>
               </grid>
@@ -629,53 +557,21 @@
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <enabled value="false"/>
+                  <visible value="false"/>
+                </properties>
                 <border type="none" title="Admissão (AAAA/MM/DD):"/>
                 <children>
-                  <component id="7b0ec" class="javax.swing.JTextField" binding="Funcionario_Admissao">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                        <preferred-size width="150" height="-1"/>
-                      </grid>
-                    </constraints>
-                    <properties/>
-                  </component>
-                </children>
-              </grid>
-              <grid id="8654a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                <margin top="0" left="0" bottom="0" right="0"/>
-                <constraints>
-                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties/>
-                <border type="none" title="CRMV:"/>
-                <children>
-                  <component id="d9a6d" class="javax.swing.JTextField" binding="Funcionario_CRMV">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                        <preferred-size width="150" height="-1"/>
-                      </grid>
-                    </constraints>
-                    <properties/>
-                  </component>
-                </children>
-              </grid>
-              <grid id="e4213" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                <margin top="0" left="0" bottom="0" right="0"/>
-                <constraints>
-                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties/>
-                <border type="none" title="Salário (R$ 0,00):"/>
-                <children>
-                  <component id="570dd" class="javax.swing.JFormattedTextField" binding="Funcionario_Salario_valor">
+                  <component id="fde3" class="javax.swing.JFormattedTextField" binding="Funcionario_Admissao">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
                       </grid>
                     </constraints>
                     <properties>
-                      <text value=""/>
+                      <enabled value="false"/>
+                      <visible value="false"/>
                     </properties>
                   </component>
                 </children>
@@ -704,15 +600,15 @@
                   <text value="Cancelar"/>
                 </properties>
               </component>
-              <grid id="ea0d3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="d0860" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties/>
-                <border type="none" title="Demissão(AAAA/MM/DD):"/>
+                <border type="none" title="NºPIS:"/>
                 <children>
-                  <component id="78ade" class="javax.swing.JTextField" binding="Funcionario_demissao">
+                  <component id="c2530" class="javax.swing.JFormattedTextField" binding="Funcionario_PIS">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
@@ -722,9 +618,71 @@
                   </component>
                 </children>
               </grid>
+              <grid id="8654a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="CRMV:"/>
+                <children>
+                  <component id="d9a6d" class="javax.swing.JTextField" binding="Funcionario_CRMV">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <grid id="e4213" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="Salário (R$ 0.00):"/>
+                <children>
+                  <component id="570dd" class="javax.swing.JFormattedTextField" binding="Funcionario_Salario_valor">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="ea0d3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <visible value="false"/>
+                </properties>
+                <border type="none" title="Demissão (AAAA/MM/DD):"/>
+                <children>
+                  <component id="47c8d" class="javax.swing.JFormattedTextField" binding="Funcionario_demissao">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
               <component id="d940c" class="javax.swing.JCheckBox" binding="acessoAoSistemaCheckBox" default-binding="true">
                 <constraints>
-                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="Acesso ao sistema"/>
@@ -732,7 +690,7 @@
               </component>
             </children>
           </grid>
-          <grid id="39b41" binding="User_Panel" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="39b41" binding="User_Panel" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <tabbedpane title="Usuário"/>
@@ -752,10 +710,10 @@
               </component>
               <vspacer id="b31da">
                 <constraints>
-                  <grid row="4" column="0" row-span="3" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="0" row-span="3" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
-              <component id="5cd6a" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+              <component id="5cd6a" class="javax.swing.JTextField" binding="usuario">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -765,26 +723,10 @@
                   <text value=""/>
                 </properties>
               </component>
-              <component id="5c146" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Senha"/>
-                </properties>
-              </component>
-              <component id="6b0f5" class="javax.swing.JTextField" binding="textField2" default-binding="true">
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
-                </constraints>
-                <properties/>
-              </component>
               <grid id="33e6e" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="0" column="2" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties/>
                 <border type="none" title="Acesso aos Módulos:"/>
@@ -795,22 +737,6 @@
                     </constraints>
                     <properties>
                       <text value="Pessoas"/>
-                    </properties>
-                  </component>
-                  <component id="14961" class="javax.swing.JCheckBox" binding="Usuario_CheckBox_Modu_Agenda">
-                    <constraints>
-                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="Agenda"/>
-                    </properties>
-                  </component>
-                  <component id="5678f" class="javax.swing.JCheckBox" binding="Usuario_CheckBox_Modu_Caixa">
-                    <constraints>
-                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="Caixa"/>
                     </properties>
                   </component>
                   <component id="db802" class="javax.swing.JCheckBox" binding="Usuario_CheckBox_Modu_Config">
@@ -857,12 +783,12 @@
               </grid>
               <vspacer id="40a39">
                 <constraints>
-                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
               <component id="805ba" class="javax.swing.JButton" binding="Usuario_BTN_SAlvar">
                 <constraints>
-                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="Salvar"/>
@@ -870,7 +796,7 @@
               </component>
               <component id="a6654" class="javax.swing.JButton" binding="Usuario_BTN_Reset_Senha">
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="Resetar Senha"/>
@@ -878,7 +804,7 @@
               </component>
               <component id="b4b35" class="javax.swing.JButton" binding="Usuario_BTN_Editar">
                 <constraints>
-                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="Editar"/>
@@ -886,7 +812,7 @@
               </component>
               <component id="c68b9" class="javax.swing.JButton" binding="Usuario_BTN_Cancelar">
                 <constraints>
-                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="Cancelar"/>

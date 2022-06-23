@@ -71,7 +71,7 @@ public class Menu {
             }
 
             private void ConfigScreen(){
-                Config configScreen = new Config();
+                Config configScreen = new Config(userObject);
                 JPanel configScree_ui = configScreen.getConfigScreen();
                 JFrame Janela = new JFrame();
                 Janela.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

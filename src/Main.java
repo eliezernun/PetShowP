@@ -18,10 +18,11 @@ public class Main {
             Login();
         } catch (MalformedURLException e) {
             JOptionPane.showMessageDialog(null, "Ocorreu um erro ao abrir a conexão de teste! \nO Sistema sera fechado!");
-            System.exit(0);
+
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Conexão com a internet indisponivel!" +
                     "\n Para o correto funcionamento do sistema, verifique sua conexão com a internet!");
+            System.exit(0);
         }
     }
 

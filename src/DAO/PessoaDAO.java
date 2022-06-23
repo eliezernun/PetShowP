@@ -16,11 +16,16 @@ public class PessoaDAO {
         conn = new DBC().conectarDB();
         try {
             pstm = conn.prepareStatement(sql);
-            pstm.setString(1,objPessoa.getNome_pessoa());
-            pstm.setString(2, objPessoa.getTelefone_pessoa());
-            pstm.setString(3, objPessoa.getLogradouro_pessoa());
+            pstm.setString(1,objPessoa.getNome_pessoa().toUpperCase());
+            pstm.setString(2, objPessoa.getTelefone_pessoa().toUpperCase());
+            pstm.setString(3, objPessoa.getLogradouro_pessoa().toUpperCase());
             pstm.setString(4, objPessoa.getCpf_pessoa());
             pstm.setBoolean(5, objPessoa.isPessoa_funcionario());
+            pstm.setString(6, objPessoa.getDdd_pessoa());
+            pstm.setBoolean(7, objPessoa.isWhatsapp_pessoa());
+            pstm.setString(8, objPessoa.getPessoa_endereco_numero());
+            pstm.setString(9, objPessoa.getPessoa_bairro().toUpperCase());
+            pstm.setString(10, objPessoa.getPessoa_endereco_cep());
             pstm.execute();
             pstm.close();
         } catch (SQLException e) {
@@ -28,10 +33,31 @@ public class PessoaDAO {
             throw new RuntimeException(e);
         }
     }
+    public void updatePessoa(PessoaDTO objetoPessoa){
+        String sql = "UPDATE Pessoa SET Nome = ?, Telefone=?, ddd_telefone = ?, whatsapp=?, logradouro=?, cep=?, numero=?, bairro= ?, funcionario=?, inativo = ? WHERE CPF = ? ";
+        conn = new DBC().conectarDB();
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objetoPessoa.getNome_pessoa().toUpperCase());
+            pstm.setString(2, objetoPessoa.getTelefone_pessoa());
+            pstm.setString(3, objetoPessoa.getDdd_pessoa());
+            pstm.setBoolean(4, objetoPessoa.isWhatsapp_pessoa());
+            pstm.setString(5,objetoPessoa.getLogradouro_pessoa().toUpperCase());
+            pstm.setString(6, objetoPessoa.getPessoa_endereco_cep());
+            pstm.setString(7, objetoPessoa.getPessoa_endereco_numero());
+            pstm.setString(8,objetoPessoa.getPessoa_bairro().toUpperCase());
+            pstm.setBoolean(9, objetoPessoa.isPessoa_funcionario());
+            pstm.setBoolean(10, objetoPessoa.isPessoa_inativa());
+            pstm.setString(11, objetoPessoa.getCpf_pessoa());
+            pstm.executeUpdate();
+            pstm.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public PessoaDTO procurarPessoa(String cpf){
         PessoaDTO ObjectPessoa = new PessoaDTO();
         String sql = "SELECT * FROM Pessoa WHERE CPF = ?";
-
         conn = new DBC().conectarDB();
         try{
             pstm = conn.prepareStatement(sql);
@@ -51,6 +77,7 @@ public class PessoaDAO {
                ObjectPessoa.setPessoa_endereco_cep(rs.getString("cep"));
                ObjectPessoa.setPessoa_inativa(rs.getBoolean("inativo"));
             }
+            pstm.close();
         }catch (SQLException e){
             throw  new RuntimeException(e);
         }

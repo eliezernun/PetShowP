@@ -21,6 +21,7 @@ public class FuncaoDAO {
             pstm = conn.prepareStatement(sql);
             pstm.setString(1, funcao.getDescricao());
             pstm.execute();
+            pstm.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
