@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="mysql-connector-java-8.0.21" />
+  <library name="mysql-connector-java-8.0.211">
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/mysql-connector-java-8.0.21.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-6.19.1.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-metadata-6.19.1.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-castor-6.19.1.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-chart-customizers-6.19.1.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-annotation-processors-6.19.1.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-chart-themes-6.19.1.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-custom-visualization-6.19.1.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-javaflow-6.19.1.jar" />
+    <archive path="C:/Users/eliez/IdeaProjects/PetShowP/jasperreports-functions-6.19.1.jar" />
+  </library>
+</eclipse-userlibraries>
+

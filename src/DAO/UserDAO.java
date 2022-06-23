@@ -116,4 +116,41 @@ public class UserDAO {
             throw new RuntimeException(e);
         }
     }
+    public UserDTO getUserProps(int id){
+        String sql = "SELECT * FROM Usuarios_Sistema WHERE profissional_id = ?";
+        conn = new DBC().conectarDB();
+        UserDTO userObject = new UserDTO();
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setInt(1, id);
+            ResultSet  rs = pstm.executeQuery();
+            while(rs.next()){
+                boolean inativo = rs.getBoolean("inativo");
+
+                    userObject.setProfissional_id(rs.getInt("profissional_id"));
+                    userObject.setUsuario(rs.getString("usuario"));
+                    userObject.setSenha(rs.getString("senha"));
+                    userObject.setModulo_agenda(rs.getInt("modulo_agenda"));
+                    userObject.setModulo_caixa(rs.getInt("modulo_caixa"));
+                    userObject.setModulo_pessoa(rs.getInt("modulo_pessoa"));
+                    userObject.setModulo_cfg(rs.getInt("modulo_cfg"));
+                    userObject.setModulo_pessoa_alterar_usuario(rs.getInt("modulo_pessoa_alterar_usuario"));
+                    userObject.setModulo_pessoa_funionario(rs.getInt("modulo_pessoa_funcionario"));
+                    userObject.setModulo_pessoa_admin(rs.getInt("modulo_pessoa_admin"));
+                    userObject.setModulo_relatorios(rs.getInt("modulo_relatorios"));
+                    userObject.setInativo(inativo);
+                    userObject.setTrocarSenha(rs.getBoolean("trocarSenha"));
+                    userObject.setAutenticado(true);
+            }
+            pstm.close();
+        }
+        catch(SQLException error){
+            JOptionPane.showMessageDialog(null, error);
+        }
+        finally {
+
+            return userObject;
+        }
+    }
 }
+

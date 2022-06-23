@@ -21,7 +21,7 @@ public class ProfissionalDAO {
             pstm = conn.prepareStatement(sql);
             pstm.setInt(1, objProfissional.getId_pessoa());
             pstm.setDouble(2, objProfissional.getSalario());
-            pstm.setInt(3, objProfissional.getId_funcao());
+            pstm.setInt(3, 1);
             pstm.setBoolean(4, objProfissional.isAcesso_sistema());
             pstm.setString(5, objProfissional.getNumero_ctps());
             pstm.setString(6, objProfissional.getNumero_certidao());

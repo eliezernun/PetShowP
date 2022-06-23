@@ -199,6 +199,7 @@ public class Pessoa {
                         OrganizarFormulario(2);
                         SetarPets();
                         if(ObjetoPessoa.isPessoa_funcionario()){
+
                             SetarFuncionario(1);
                             OrganizarFormulario(7);
                             if(cadastrarFuncionario == 1){
@@ -364,7 +365,7 @@ public class Pessoa {
 
                 ComboItem var = (ComboItem) Funcionario_funcao.getSelectedItem();
 
-                ObjetoProfissional.setId_funcao(Integer.parseInt(var.getKey()));
+                ObjetoProfissional.setId_funcao(Integer.parseInt(var.getValue()));
                 if(ObjetoProfissional.getId() == 0){
                     System.out.println("as");
                     profissionalDAO.cadastrarProfissional(ObjetoProfissional);
@@ -431,10 +432,14 @@ public class Pessoa {
             Funcionario_Salario_valor.setText(String.valueOf(ObjetoProfissional.getSalario()));
             Funcionario_funcao.setSelectedItem(ObjetoProfissional.getId_funcao());
             acessoAoSistemaCheckBox.setSelected(ObjetoProfissional.isAcesso_sistema());
-            if(ObjetoProfissional.isAcesso_sistema() && alterarUsuario == 1){
-                Usuario_BTN_Editar.setEnabled(true);
+            Usuario_BTN_Editar.setEnabled(true);
 
+            if(acessoAoSistemaCheckBox.isSelected()){
+                if(ObjetoProfissional.getId() != 0){
+                    usuarioSETAR();
+                }
             }
+
         }
         else{
 
@@ -734,7 +739,6 @@ public class Pessoa {
                 break;
             case 13:
                 Usuario_CheckBox_Modu_Pessoa.setEnabled(true);
-                Usuario_CheckBox_Modu_Agenda.setEnabled(true);
                 Usuario_CheckBox_Perm_Cad_Func.setEnabled(true);
                 Usuario_CheckBox_Perm_Rel.setEnabled(true);
                 Usuario_CheckBox_Perm_Alt_User.setEnabled(false);
@@ -751,6 +755,20 @@ public class Pessoa {
                 break;
         }
     }
+   private void usuarioSETAR(){
+
+        userDTO = userDAO.getUserProps(ObjetoProfissional.getId());
+
+        Usuario_BTN_Editar.setEnabled(true);
+        usuario.setText(userDTO.getUsuario());
+        Usuario_BTN_Cancelar.setEnabled(true);
+        Usuario_BTN_SAlvar.setEnabled(true);
+        Usuario_CheckBox_Modu_Config.setSelected(userDTO.getModulo_cfg() == 1 ? true: false);
+        Usuario_CheckBox_Perm_Cad_Func.setSelected(userDTO.getModulo_pessoa_funionario() == 1 ? true: false);
+        Usuario_CheckBox_Perm_Alt_User.setSelected(userDTO.getModulo_pessoa_alterar_usuario() == 1 ? true: false);
+        Usuario_CheckBox_Perm_Adm.setSelected(userDTO.getModulo_pessoa_admin() == 1 ? true: false);
+
+   }
     public JPanel getPessoaPaenel(){
         return Pessoa;
     }
